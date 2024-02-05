@@ -1,13 +1,33 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Contact() {
+  const { ref } = useSectionInView("Contact");
   return (
-    <section id="contact" className="mb-20 sm:mb-28 w-[min(100%,38rem)]">
+    <motion.section
+      ref={ref}
+      id="contact"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)]
+    text-center"
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700">
+      <p className="text-gray-700 -mt-6">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:biancawikberg99@yahoo.com">
           biancawikberg99@yahoo.com{" "}
@@ -17,10 +37,14 @@ export default function Contact() {
 
       <form className="mt-10 flex flex-col">
         <input
-          className="h-14 rounded-lg border border-black/10"
+          className="h-14 px-4 rounded-lg border border-black/10"
           type="email"
+          placeholder="Your email"
         />
-        <textarea className="h-52 my-3 rounded-lg border-black/10 p-4" />
+        <textarea
+          className="h-52 my-3 rounded-lg border-black/10 p-4"
+          placeholder="Your message"
+        />
         <button
           type="submit"
           className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem]
@@ -36,6 +60,6 @@ export default function Contact() {
           />{" "}
         </button>
       </form>
-    </section>
+    </motion.section>
   );
 }
