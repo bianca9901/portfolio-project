@@ -94,7 +94,7 @@ export default function Intro() {
           className="group bg-white px-7 
         py-3 flex items-center gap-2 rounded-full outline-none
         focus:scale-110 hover:scale-110 active:scale-105
-        transition cursor-pointer border border-black/10" href="/CV.pdf" download
+        transition cursor-pointer border border-black/10 dark:bg-white/10" href="/CV.pdf" download
         >
           Download CV <HiDownload className="opacity-60
           group-hover:translate-y-1 transition "/>
@@ -105,7 +105,7 @@ export default function Intro() {
           className="bg-white p-4 text-gray-700
          flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15]
          hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border
-         border-black/10" href="https://github.com/bianca9901" target="_blank"
+         border-black/10 dark:text-white/60 dark:bg-white/10" href="https://github.com/bianca9901" target="_blank"
         >
           <FaGithubSquare />
         </a>
