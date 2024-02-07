@@ -1,4 +1,3 @@
-import React from "react";
 import todo from "@/public/todo.png";
 import django from "@/public/restaurant-django.png";
 import zenzone from "@/public/zen-zone.png";
@@ -42,7 +41,7 @@ export const projectsData = [
      `Designed and developed a restaurant website with features such as event
      reservations and reviews, easily accessible for the restaurant staff to
      manage.`,
-    tags: ["HTML", "CSS", "Django", "PostgreSQL"],
+    tags: ["HTML", "CSS", "Bootstrap", "Django", "PostgreSQL"],
     imageUrl: django,
   },
   {
@@ -68,10 +67,13 @@ export const skillsData = [
   "Bootstrap",
   "SASS",
   "AJAX",
+  "React Router",
+  "Jest",
   "MongoDB",
   "Redux",
   "Django REST framework",
   "Heroku",
+  "Vercel",
   "Express",
   "PostgreSQL",
   "Python",
