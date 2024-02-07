@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView('About')
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
@@ -19,31 +19,28 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        I am a <span className="font-medium">junior fullstack developer</span>{" "}
-        with a diploma in{" "}
-        <span className="font-medium">Fullstack Software Development</span>.
-        With a solid foundation in <span className="font-medium">HTML</span>,{" "}
-        <span className="font-medium">CSS</span>,{" "}
-        <span className="font-medium">JavaScript</span>, and{" "}
-        <span className="font-medium">Python</span>, I am ready to put my
-        technical skills into practice.
-      </p>
-
-      <p className="mb-3">
-        <span className="italic">
-          {" "}
-          I am seeking a position where I can not only{" "}
-          <span className="font-medium">leverage my current skills </span> but
-          also{" "}
-          <span className="font-medium">
-            expand them in line with the latest trends.
-          </span>
-        </span>{" "}
-        Eager to take my first step into the tech industry, I aim to join a
-        forward-thinking development team where I can{" "}
-        <span className="font-medium">grow professionally.</span>
-      </p>
+      <div>
+        <p className="mb-3">
+          Hey there! {`I'm`} a <span className="font-medium">25-year-old</span> web
+          enthusiast from <span className="font-medium">Sweden</span>.
+          I <span className="font-medium">love</span> crafting websites
+          with <span className="font-medium">HTML</span>,{" "}
+          <span className="font-medium">CSS</span>,{" "}
+          <span className="font-medium">JavaScript</span>, and{" "}
+          <span className="font-medium">Python</span>.
+        </p>
+        <p className="mb-3 italic">
+          I particularly enjoy working with{" "}
+          <span className="font-medium">React</span> and{" "}
+          <span className="font-medium">Next.js</span>.
+        </p>
+        <p className="mb-3">
+        {`I'm`} always eager to explore new technologies and stay updated with the
+          latest trends! My goal is continuous personal and professional growth,
+          finding <span className="font-medium">joy and pride</span> in my work
+          along the way.
+        </p>
+      </div>
     </motion.section>
   );
 }
